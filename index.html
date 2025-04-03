@@ -1,1 +1,579 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Hub Pro - مركز الذكاء الاصطناعي المتقدم</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.rtl.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/themes.css">
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body class="light-theme">
+    <!-- شريط التنقل -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <i class="fas fa-robot me-2"></i> AI Hub <span class="badge bg-primary ms-2">Pro</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="#"><i class="fas fa-home me-1"></i> الرئيسية</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#models"><i class="fas fa-list me-1"></i> النماذج</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#unified"><i class="fas fa-comments me-1"></i> الدردشة</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#image"><i class="fas fa-image me-1"></i> الصور</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#code"><i class="fas fa-code me-1"></i> البرمجة</a></li>
+                </ul>
+                <div class="d-flex align-items-center ms-3">
+                    <div class="theme-switcher me-3">
+                        <button class="btn btn-sm btn-outline-light theme-btn" data-theme="light"><i class="fas fa-sun"></i></button>
+                        <button class="btn btn-sm btn-outline-light theme-btn" data-theme="dark"><i class="fas fa-moon"></i></button>
+                    </div>
+                    <div class="dropdown">
+                        <button class="btn btn-outline-light dropdown-toggle" type="button" id="userDropdown" data-bs-toggle="dropdown">
+                            <i class="fas fa-user me-1"></i> حسابي
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-end">
+                            <li><a class="dropdown-item" href="#"><i class="fas fa-user-circle me-2"></i>الملف الشخصي</a></li>
+                            <li><a class="dropdown-item" href="#"><i class="fas fa-history me-2"></i>سجل المحادثات</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#"><i class="fas fa-sign-out-alt me-2"></i>تسجيل الخروج</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
 
+    <!-- قسم البطل -->
+    <header class="hero-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h1 class="display-4 fw-bold mb-4">مركز الذكاء الاصطناعي المتقدم</h1>
+                    <p class="lead mb-4">منصة متكاملة تجمع أقوى نماذج الذكاء الاصطناعي مع واجهة سهلة الاستخدام وميزات متقدمة</p>
+                    <div class="d-flex gap-3">
+                        <a href="#unified" class="btn btn-primary btn-lg px-4"><i class="fas fa-bolt me-2"></i>ابدأ الآن</a>
+                        <a href="#features" class="btn btn-outline-primary btn-lg px-4"><i class="fas fa-play-circle me-2"></i>شاهد الفيديو</a>
+                    </div>
+                    <div class="mt-4 d-flex flex-wrap gap-2">
+                        <span class="badge bg-primary"><i class="fas fa-check me-1"></i> متعدد النماذج</span>
+                        <span class="badge bg-success"><i class="fas fa-check me-1"></i> إنشاء صور</span>
+                        <span class="badge bg-info"><i class="fas fa-check me-1"></i> مساعد برمجة</span>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="hero-image">
+                        <img src="assets/images/ai-hero.png" alt="AI Illustration" class="img-fluid">
+                        <div class="floating-badge bg-primary">
+                            <i class="fas fa-headset me-2"></i> دعم فني 24/7
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- قسم النماذج -->
+    <section id="models" class="models-section py-5">
+        <div class="container">
+            <div class="section-header text-center mb-5">
+                <h2 class="section-title">نماذج الذكاء الاصطناعي</h2>
+                <p class="section-subtitle">اختر من بين مجموعة متنوعة من نماذج الذكاء الاصطناعي المتطورة</p>
+            </div>
+            
+            <div class="row g-4">
+                <!-- نموذج Llama -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="model-card llama">
+                        <div class="model-header">
+                            <div class="model-icon">
+                                <i class="fas fa-hippo"></i>
+                            </div>
+                            <h3 class="model-title">Llama 2</h3>
+                            <p class="model-subtitle">نموذج مفتوح المصدر من Meta</p>
+                        </div>
+                        <div class="model-body">
+                            <ul class="model-features">
+                                <li><i class="fas fa-check-circle text-success me-2"></i> أداء متوازن</li>
+                                <li><i class="fas fa-check-circle text-success me-2"></i> دعم متعدد اللغات</li>
+                                <li><i class="fas fa-check-circle text-success me-2"></i> مجاني للاستخدام</li>
+                            </ul>
+                            <div class="model-stats">
+                                <div class="stat-item">
+                                    <span class="stat-value">7B</span>
+                                    <span class="stat-label">معاملات</span>
+                                </div>
+                                <div class="stat-item">
+                                    <span class="stat-value">2023</span>
+                                    <span class="stat-label">الإصدار</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="model-footer">
+                            <button class="btn btn-select-model" data-model="llama">
+                                <i class="fas fa-comment me-2"></i> استخدام النموذج
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- نموذج Deepseek -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="model-card deepseek">
+                        <div class="model-header">
+                            <div class="model-icon">
+                                <i class="fas fa-brain"></i>
+                            </div>
+                            <h3 class="model-title">Deepseek</h3>
+                            <p class="model-subtitle">نموذج متخصص في الفهم العميق</p>
+                        </div>
+                        <div class="model-body">
+                            <ul class="model-features">
+                                <li><i class="fas fa-check-circle text-success me-2"></i> تحليل متعمق</li>
+                                <li><i class="fas fa-check-circle text-success me-2"></i> إجابات دقيقة</li>
+                                <li><i class="fas fa-check-circle text-success me-2"></i> أداء سريع</li>
+                            </ul>
+                            <div class="model-stats">
+                                <div class="stat-item">
+                                    <span class="stat-value">13B</span>
+                                    <span class="stat-label">معاملات</span>
+                                </div>
+                                <div class="stat-item">
+                                    <span class="stat-value">2023</span>
+                                    <span class="stat-label">الإصدار</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="model-footer">
+                            <button class="btn btn-select-model" data-model="Deepseek">
+                                <i class="fas fa-comment me-2"></i> استخدام النموذج
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- نموذج GPT-4 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="model-card gpt4">
+                        <div class="model-header">
+                            <div class="model-icon">
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <h3 class="model-title">GPT-4</h3>
+                            <p class="model-subtitle">أحدث نموذج من OpenAI</p>
+                        </div>
+                        <div class="model-body">
+                            <ul class="model-features">
+                                <li><i class="fas fa-check-circle text-success me-2"></i> إجابات ذكية</li>
+                                <li><i class="fas fa-check-circle text-success me-2"></i> فهم سياقي متقدم</li>
+                                <li><i class="fas fa-check-circle text-success me-2"></i> إبداعي في الردود</li>
+                            </ul>
+                            <div class="model-stats">
+                                <div class="stat-item">
+                                    <span class="stat-value">1.8T</span>
+                                    <span class="stat-label">معاملات</span>
+                                </div>
+                                <div class="stat-item">
+                                    <span class="stat-value">2023</span>
+                                    <span class="stat-label">الإصدار</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="model-footer">
+                            <button class="btn btn-select-model" data-model="GPT-4">
+                                <i class="fas fa-comment me-2"></i> استخدام النموذج
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- يمكن إضافة المزيد من النماذج هنا -->
+            </div>
+            
+            <div class="text-center mt-5">
+                <button class="btn btn-outline-primary btn-lg" id="compare-models">
+                    <i class="fas fa-exchange-alt me-2"></i> مقارنة النماذج
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- الأداة الموحدة -->
+    <section id="unified" class="chat-section py-5">
+        <div class="container">
+            <div class="section-header text-center mb-5">
+                <h2 class="section-title">الدردشة الذكية</h2>
+                <p class="section-subtitle">تفاعل مع نماذج الذكاء الاصطناعي بسهولة ويسر</p>
+            </div>
+            
+            <div class="chat-container">
+                <div class="row">
+                    <div class="col-lg-4 col-md-5">
+                        <div class="chat-sidebar">
+                            <div class="sidebar-header">
+                                <h4><i class="fas fa-comments me-2"></i> المحادثات</h4>
+                                <button class="btn btn-sm btn-primary" id="new-chat">
+                                    <i class="fas fa-plus"></i> جديد
+                                </button>
+                            </div>
+                            <div class="conversations-list">
+                                <div class="conversation active">
+                                    <div class="conversation-preview">مرحباً، كيف يمكنني مساعدتك اليوم؟</div>
+                                    <small class="conversation-time">اليوم، 10:30 ص</small>
+                                </div>
+                                <div class="conversation">
+                                    <div class="conversation-preview">أريد مساعدة في كتابة كود JavaScript</div>
+                                    <small class="conversation-time">أمس، 3:45 م</small>
+                                </div>
+                                <div class="conversation">
+                                    <div class="conversation-preview">أسئلة حول الذكاء الاصطناعي</div>
+                                    <small class="conversation-time">12 مايو</small>
+                                </div>
+                            </div>
+                            <div class="sidebar-footer">
+                                <div class="model-selector">
+                                    <label for="model-select"><i class="fas fa-robot me-2"></i> النموذج:</label>
+                                    <select id="model-select" class="form-select">
+                                        <option value="llama">Llama 2</option>
+                                        <option value="Deepseek">Deepseek</option>
+                                        <option value="GPT-4">GPT-4</option>
+                                        <option value="WormGPT">WormGPT</option>
+                                        <option value="EvilAI">EvilAI</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-8 col-md-7">
+                        <div class="chat-main">
+                            <div class="chat-header">
+                                <div class="chat-model-info">
+                                    <span class="model-badge">Llama 2</span>
+                                    <span class="model-status"><i class="fas fa-circle text-success"></i> متصل</span>
+                                </div>
+                                <div class="chat-actions">
+                                    <button class="btn btn-sm btn-outline-secondary" id="clear-chat">
+                                        <i class="fas fa-trash"></i>
+                                    </button>
+                                    <button class="btn btn-sm btn-outline-secondary" id="export-chat">
+                                        <i class="fas fa-download"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="chat-messages" id="chat-messages">
+                                <div class="welcome-message">
+                                    <div class="message-ai">
+                                        <div class="message-content">
+                                            <p>مرحباً! أنا مساعدك الذكي. كيف يمكنني مساعدتك اليوم؟</p>
+                                            <p>يمكنك اختيار نموذج مختلف من القائمة الجانبية للحصول على إجابات مختلفة.</p>
+                                        </div>
+                                        <div class="message-time">اليوم، 10:30 ص</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="chat-input">
+                                <div class="input-tools">
+                                    <button class="btn btn-sm btn-outline-secondary" id="voice-input">
+                                        <i class="fas fa-microphone"></i>
+                                    </button>
+                                    <button class="btn btn-sm btn-outline-secondary" id="attach-file">
+                                        <i class="fas fa-paperclip"></i>
+                                    </button>
+                                </div>
+                                <textarea id="user-message" class="form-control" placeholder="اكتب رسالتك هنا..." rows="2"></textarea>
+                                <button id="send-message" class="btn btn-primary">
+                                    <i class="fas fa-paper-plane"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- إنشاء الصور -->
+    <section id="image" class="image-section py-5">
+        <div class="container">
+            <div class="section-header text-center mb-5">
+                <h2 class="section-title">مولد الصور بالذكاء الاصطناعي</h2>
+                <p class="section-subtitle">اصنع صوراً مذهلة من مجرد وصف نصي</p>
+            </div>
+            
+            <div class="row">
+                <div class="col-lg-5">
+                    <div class="image-generator-card">
+                        <h4><i class="fas fa-magic me-2"></i> إعدادات الصورة</h4>
+                        <div class="mb-3">
+                            <label for="image-prompt" class="form-label">وصف الصورة</label>
+                            <textarea id="image-prompt" class="form-control" rows="3" placeholder="صف الصورة التي تريد إنشائها..."></textarea>
+                        </div>
+                        <div class="row g-2">
+                            <div class="col-md-6">
+                                <label for="image-style" class="form-label">النمط الفني</label>
+                                <select id="image-style" class="form-select">
+                                    <option value="realistic">واقعي</option>
+                                    <option value="cartoon">كرتون</option>
+                                    <option value="anime">أنمي</option>
+                                    <option value="oil-painting">لوحة زيتية</option>
+                                    <option value="cyberpunk">سايبربانك</option>
+                                </select>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="image-quality" class="form-label">جودة الصورة</label>
+                                <select id="image-quality" class="form-select">
+                                    <option value="low">منخفضة</option>
+                                    <option value="medium" selected>متوسطة</option>
+                                    <option value="high">عالية</option>
+                                </select>
+                            </div>
+                        </div>
+                        <button id="generate-image" class="btn btn-primary w-100 mt-3">
+                            <i class="fas fa-magic me-2"></i> إنشاء الصورة
+                        </button>
+                        <div class="prompt-samples mt-3">
+                            <h6>أمثلة لوصف الصور:</h6>
+                            <ul class="sample-list">
+                                <li>"منظر لغروب الشمس على شاطئ رملي مع أشجار النخيل"</li>
+                                <li>"مدينة مستقبلية في الفضاء مع سفن فضائية"</li>
+                                <li>"قطة ترتدي نظارة شمسية وتجلس على أريكة"</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-7">
+                    <div class="image-results">
+                        <div class="image-preview" id="image-preview">
+                            <div class="empty-state">
+                                <i class="fas fa-image"></i>
+                                <p>الصورة المنشأة ستظهر هنا</p>
+                            </div>
+                        </div>
+                        <div class="image-actions" id="image-actions" style="display: none;">
+                            <button class="btn btn-outline-primary" id="download-image">
+                                <i class="fas fa-download me-2"></i> تحميل
+                            </button>
+                            <button class="btn btn-outline-secondary" id="regenerate-image">
+                                <i class="fas fa-sync-alt me-2"></i> إعادة إنشاء
+                            </button>
+                            <button class="btn btn-outline-success" id="edit-image">
+                                <i class="fas fa-edit me-2"></i> تعديل
+                            </button>
+                        </div>
+                        <div class="image-gallery mt-4">
+                            <h6>الصور المنشأة سابقاً</h6>
+                            <div class="gallery-grid">
+                                <!-- سيتم ملؤها بالصور المحفوظة -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- مساعد البرمجة -->
+    <section id="code" class="code-section py-5">
+        <div class="container">
+            <div class="section-header text-center mb-5">
+                <h2 class="section-title">مساعد البرمجة</h2>
+                <p class="section-subtitle">احصل على مساعدة في كتابة وتصحيح الأكواد البرمجية</p>
+            </div>
+            
+            <div class="code-assistant">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="code-editor-container">
+                            <div class="editor-header">
+                                <select id="code-language" class="form-select">
+                                    <option value="javascript">JavaScript</option>
+                                    <option value="python">Python</option>
+                                    <option value="html">HTML</option>
+                                    <option value="css">CSS</option>
+                                    <option value="php">PHP</option>
+                                    <option value="java">Java</option>
+                                </select>
+                                <div class="editor-actions">
+                                    <button class="btn btn-sm btn-outline-secondary" id="format-code">
+                                        <i class="fas fa-align-left"></i> تنسيق
+                                    </button>
+                                    <button class="btn btn-sm btn-outline-secondary" id="clear-code">
+                                        <i class="fas fa-trash"></i> مسح
+                                    </button>
+                                </div>
+                            </div>
+                            <textarea id="code-editor" class="form-control" placeholder="اكتب الكود هنا أو اشرح ما تريد إنشاؤه..."></textarea>
+                            <div class="editor-footer">
+                                <button class="btn btn-primary" id="generate-code">
+                                    <i class="fas fa-code me-2"></i> توليد الكود
+                                </button>
+                                <button class="btn btn-success" id="debug-code">
+                                    <i class="fas fa-bug me-2"></i> تصحيح الأخطاء
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="code-output-container">
+                            <div class="output-header">
+                                <h5><i class="fas fa-terminal me-2"></i> النتيجة</h5>
+                                <div class="output-actions">
+                                    <button class="btn btn-sm btn-outline-secondary" id="copy-code">
+                                        <i class="fas fa-copy"></i> نسخ
+                                    </button>
+                                    <button class="btn btn-sm btn-outline-secondary" id="run-code">
+                                        <i class="fas fa-play"></i> تشغيل
+                                    </button>
+                                </div>
+                            </div>
+                            <div id="code-output" class="code-output">
+                                <div class="empty-state">
+                                    <i class="fas fa-code"></i>
+                                    <p>النتيجة ستظهر هنا</p>
+                                </div>
+                            </div>
+                            <div class="code-explanations" id="code-explanations">
+                                <div class="empty-state">
+                                    <i class="fas fa-comment-alt"></i>
+                                    <p>التفسيرات ستظهر هنا</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- المميزات الإضافية -->
+    <section id="features" class="features-section py-5">
+        <div class="container">
+            <div class="section-header text-center mb-5">
+                <h2 class="section-title">مميزات إضافية فريدة</h2>
+                <p class="section-subtitle">تعزيز تجربة استخدام الذكاء الاصطناعي</p>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-3">
+                    <div class="feature-card">
+                        <div class="feature-icon bg-primary">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h4>نماذج متعددة</h4>
+                        <p>احصل على إجابات من عدة نماذج في نفس الوقت وقارن النتائج لتحصل على أفضل إجابة</p>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-3">
+                    <div class="feature-card">
+                        <div class="feature-icon bg-success">
+                            <i class="fas fa-language"></i>
+                        </div>
+                        <h4>ترجمة متقدمة</h4>
+                        <p>ترجمة دقيقة مع الحفاظ على السياق والمعنى الأصلي للنص بين أكثر من 50 لغة</p>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-3">
+                    <div class="feature-card">
+                        <div class="feature-icon bg-info">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <h4>مساعد برمجة</h4>
+                        <p>مساعدة في كتابة وتصحيح وتحسين الأكواد البرمجية بلغات متعددة مع شرح الأكواد</p>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-3">
+                    <div class="feature-card">
+                        <div class="feature-icon bg-warning">
+                            <i class="fas fa-history"></i>
+                        </div>
+                        <h4>سجل المحادثات</h4>
+                        <p>احفظ جميع محادثاتك واسترجعها في أي وقت لمواصلة من حيث توقفت</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- التذييل -->
+    <footer class="footer py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <div class="footer-brand">
+                        <i class="fas fa-robot me-2"></i> AI Hub Pro
+                    </div>
+                    <p class="mt-3">منصة متكاملة تجمع أقوى أدوات الذكاء الاصطناعي في مكان واحد لتجربة مستخدم فريدة ومتميزة.</p>
+                    <div class="social-links mt-3">
+                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-telegram"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 mb-4">
+                    <h5 class="footer-title">روابط سريعة</h5>
+                    <ul class="footer-links">
+                        <li><a href="#"><i class="fas fa-chevron-left me-2"></i>الرئيسية</a></li>
+                        <li><a href="#models"><i class="fas fa-chevron-left me-2"></i>النماذج</a></li>
+                        <li><a href="#unified"><i class="fas fa-chevron-left me-2"></i>الدردشة</a></li>
+                        <li><a href="#image"><i class="fas fa-chevron-left me-2"></i>إنشاء الصور</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-4 mb-4">
+                    <h5 class="footer-title">النماذج المدعومة</h5>
+                    <ul class="footer-links">
+                        <li><a href="#"><i class="fas fa-chevron-left me-2"></i>Llama 2</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-left me-2"></i>Deepseek</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-left me-2"></i>GPT-4</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-left me-2"></i>WormGPT</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-4 mb-4">
+                    <h5 class="footer-title">اتصل بنا</h5>
+                    <ul class="footer-contacts">
+                        <li><i class="fas fa-envelope me-2"></i> contact@aihub.example.com</li>
+                        <li><i class="fas fa-phone me-2"></i> +966 12 345 6789</li>
+                        <li><i class="fas fa-map-marker-alt me-2"></i> الرياض، المملكة العربية السعودية</li>
+                    </ul>
+                    <div class="newsletter mt-3">
+                        <label for="newsletter-email" class="form-label">اشترك في النشرة البريدية</label>
+                        <div class="input-group">
+                            <input type="email" id="newsletter-email" class="form-control" placeholder="بريدك الإلكتروني">
+                            <button class="btn btn-primary"><i class="fas fa-paper-plane"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr class="footer-divider">
+            <div class="footer-bottom">
+                <div class="row">
+                    <div class="col-md-6">
+                        <p class="mb-0">© 2023 AI Hub Pro. جميع الحقوق محفوظة.</p>
+                    </div>
+                    <div class="col-md-6">
+                        <ul class="footer-bottom-links">
+                            <li><a href="#">شروط الخدمة</a></li>
+                            <li><a href="#">سياسة الخصوصية</a></li>
+                            <li><a href="#">الإبلاغ عن مشكلة</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- النصوص البرمجية -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/chat.js"></script>
+    <script src="js/image.js"></script>
+</body>
+</html>
