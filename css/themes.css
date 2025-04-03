@@ -1,0 +1,98 @@
+/* الثيم الفاتح (الإفتراضي) */
+.light-theme {
+    --bg-primary: #f5f7ff;
+    --bg-secondary: #ffffff;
+    --text-primary: #343a40;
+    --text-secondary: #6c757d;
+    --border-color: rgba(0, 0, 0, 0.1);
+    --card-bg: #ffffff;
+    --input-bg: #ffffff;
+}
+
+/* الثيم الداكن */
+.dark-theme {
+    --bg-primary: #1a1a2e;
+    --bg-secondary: #16213e;
+    --text-primary: #f8f9fa;
+    --text-secondary: #adb5bd;
+    --border-color: rgba(255, 255, 255, 0.1);
+    --card-bg: #16213e;
+    --input-bg: #0f3460;
+    
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+}
+
+.dark-theme .navbar {
+    background: linear-gradient(135deg, #4a42e8, #3a36b8);
+}
+
+.dark-theme .model-card {
+    background-color: var(--card-bg);
+    border-color: var(--border-color);
+}
+
+.dark-theme .model-features li {
+    color: var(--text-primary);
+}
+
+.dark-theme .model-stats {
+    border-color: var(--border-color);
+}
+
+.dark-theme .chat-sidebar,
+.dark-theme .chat-main,
+.dark-theme .code-editor-container,
+.dark-theme .code-output-container {
+    background-color: var(--bg-secondary);
+    border-color: var(--border-color);
+}
+
+.dark-theme .conversation {
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+.dark-theme .conversation.active {
+    background-color: rgba(108, 99, 255, 0.2);
+}
+
+.dark-theme .message-ai .message-content {
+    background-color: var(--card-bg);
+    color: var(--text-primary);
+}
+
+.dark-theme #user-message,
+.dark-theme #code-editor {
+    background-color: var(--input-bg);
+    color: var(--text-primary);
+    border-color: var(--border-color);
+}
+
+.dark-theme .image-generator-card,
+.dark-theme .image-results,
+.dark-theme .feature-card {
+    background-color: var(--bg-secondary);
+    border-color: var(--border-color);
+}
+
+.dark-theme .empty-state {
+    color: var(--text-secondary);
+}
+
+.dark-theme .footer {
+    background-color: #0f0f23;
+}
+
+.dark-theme .footer-links a,
+.dark-theme .footer-contacts {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.dark-theme .footer-links a:hover {
+    color: var(--white);
+}
+
+.dark-theme .newsletter .form-control {
+    background-color: rgba(255, 255, 255, 0.05);
+    color: var(--white);
+}
